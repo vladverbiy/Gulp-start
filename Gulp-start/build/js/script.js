@@ -1,0 +1,1 @@
+function o(o,n){return o+n}console.log(o(43,78)),console.log(o(13,193));

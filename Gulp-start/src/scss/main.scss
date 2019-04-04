@@ -1,0 +1,41 @@
+@import 'test';
+@import 'fonts';
+@import 'libs';
+
+@import 'vars';
+
+.h1 {
+ @extend %test;
+  color: $blu;
+  padding: $pad;
+  
+  &:hover {
+    background: #000;
+    color: tomato;
+   transform: scale(0.9);
+   transition-delay: 0.3s;
+   transition-duration: 0.5s;
+  }
+}
+
+.p {
+  color: crimson;
+  padding: 10px;
+  
+  &:hover {
+    color: gray;
+  }
+  &__a {
+    color: blueviolet;
+    text-decoration: none;
+    &:hover {
+      transform: scale(1.2);
+      display: inline-block;
+      
+      
+    }
+  }
+  
+}
+  
+@import 'media';
